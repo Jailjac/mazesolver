@@ -1,7 +1,11 @@
 from window import Window
+from shapes import *
+from maze import Maze
 
 def main():
     win = Window(800, 600, "Test Window")
+
+    maze = Maze(10, 10, 10, 8, 50, 50, win)
     win.wait_for_close()
 
 
